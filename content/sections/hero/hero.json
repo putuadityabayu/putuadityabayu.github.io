@@ -1,0 +1,18 @@
+{
+  "intro": "Hi",
+  "image": {
+    "src": "../../images/waving-hand.png",
+    "alt": "Waving Hand Emoji"
+  },
+  "title": "Welcome To My Portfolio",
+  "subtitle": {
+    "prefix": "",
+    "highlight": "",
+    "suffix": ""
+  },
+  "description": "Backend / Frontend Developer",
+  "socialProfiles": {
+    "from": ["LinkedIn", "Github", "Mail"],
+    "showIcons": false
+  }
+}
