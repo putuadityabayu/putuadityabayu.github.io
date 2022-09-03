@@ -4,17 +4,15 @@ on:
   pull_request:
     branches:
       - main
-  push:
-    branches:
-      - main
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [16.x]
+        platform: [ubuntu-latest, windows-latest, macos-latest]
         browser: ['chrome','firefox','edge']
+    runs-on: ${{ matrix.platform }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -23,8 +21,22 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
+          cache: npm
+      # Cache
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ hashFiles('package.json.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
+      # Install Depedencies
+      - name: Install Depedencies
+        run: |
+          npm config set legacy-peer-deps=true
+          npm ci
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v4
