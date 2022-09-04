@@ -1,10 +1,10 @@
 <img src="screenshot.png" alt="Gatsby Theme Portfolio Minimal Screenshot" width="700" />
 
-# putuaditya.github.io
+# putuadityabayu.github.io
 
 #### My Portfolio Website.
 
-putuaditya.github.io is an open sources NodeJs application for my portfolio websites build with GatsbyJs and [Portfolio Minimal](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal/tree/main/gatsby-theme-portfolio-minimal#readme).
+putuadityabayu.github.io is an open sources NodeJs application for my portfolio websites build with GatsbyJs and [Portfolio Minimal](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal/tree/main/gatsby-theme-portfolio-minimal#readme).
 
 [Live Websites](https://aditya.portalnesia.com)
 

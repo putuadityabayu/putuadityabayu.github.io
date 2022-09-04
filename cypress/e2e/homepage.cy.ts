@@ -18,8 +18,8 @@ describe('The Home Page', () => {
     // .get('.todo-list li').last().should('have.text', 'Walk the dog')
   })
 
-  it('Display four social media in Contact Section', () => {
+  it('Display six social media in Contact Section', () => {
     cy.wait(500)
-    cy.get('#contact').find('.test-social-section a').should('have.length', 4)
+    cy.get('#contact').find('.test-social-section a').should('have.length', 6)
   })
 })
