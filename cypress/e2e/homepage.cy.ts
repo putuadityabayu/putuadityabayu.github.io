@@ -1,10 +1,10 @@
 describe('The Home Page', () => {
   beforeEach(() => {
     cy.visit('/')
-    cy.wait(500)
   })
 
   it('Display three social media in Hero Section', () => {
+    cy.wait(500)
     // We use the `cy.get()` command to get all elements that match the selector.
     // Then, we use `should` to assert that there are two matched items,
     // which are the two default items.
@@ -18,7 +18,8 @@ describe('The Home Page', () => {
     // .get('.todo-list li').last().should('have.text', 'Walk the dog')
   })
 
-  it('Display six social media in Contact Section', () => {
+  it('Display four social media in Contact Section', () => {
+    cy.wait(500)
     cy.get('#contact').find('.test-social-section a').should('have.length', 4)
   })
 })
