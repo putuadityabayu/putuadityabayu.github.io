@@ -28,6 +28,81 @@ index f6cdde9..0166354 100644
  }
  
  .ContentWrapper  {
+diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/components/Icon/IconFacebook.tsx b/node_modules/gatsby-theme-portfolio-minimal/src/components/Icon/IconFacebook.tsx
+new file mode 100644
+index 0000000..567a523
+--- /dev/null
++++ b/node_modules/gatsby-theme-portfolio-minimal/src/components/Icon/IconFacebook.tsx
+@@ -0,0 +1,21 @@
++import React from 'react';
++
++interface IconFacebookProps {
++    color?: string;
++}
++
++export function IconFacebook(props: IconFacebookProps): React.ReactElement {
++    return (
++        <svg
++          version="1.1"
++          role="img"
++          fill={props.color || 'var(--primary-color)'}
++          xmlns="http://www.w3.org/2000/svg"
++          width="24"
++          height="24"
++          viewBox="0 0 24 24"
++        >
++          <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
++        </svg>
++    );
++}
+diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/components/Icon/IconInstagram.tsx b/node_modules/gatsby-theme-portfolio-minimal/src/components/Icon/IconInstagram.tsx
+new file mode 100644
+index 0000000..f2a0d25
+--- /dev/null
++++ b/node_modules/gatsby-theme-portfolio-minimal/src/components/Icon/IconInstagram.tsx
+@@ -0,0 +1,21 @@
++import React from 'react';
++
++interface IconInstagramProps {
++    color?: string;
++}
++
++export function IconInstagram(props: IconInstagramProps): React.ReactElement {
++    return (
++        <svg
++          version="1.1"
++          role="img"
++          fill={props.color || 'var(--primary-color)'}
++          xmlns="http://www.w3.org/2000/svg"
++          width="24"
++          height="24"
++          viewBox="0 0 24 24"
++        >
++          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
++        </svg>
++    );
++}
+diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/components/Icon/index.tsx b/node_modules/gatsby-theme-portfolio-minimal/src/components/Icon/index.tsx
+index 18457c1..95fc764 100644
+--- a/node_modules/gatsby-theme-portfolio-minimal/src/components/Icon/index.tsx
++++ b/node_modules/gatsby-theme-portfolio-minimal/src/components/Icon/index.tsx
+@@ -1,3 +1,5 @@
++import { IconFacebook } from 'gatsby-theme-portfolio-minimal/src/components/Icon/IconFacebook';
++import { IconInstagram } from 'gatsby-theme-portfolio-minimal/src/components/Icon/IconInstagram';
+ import React from 'react';
+ import { IconBehance } from './IconBehance';
+ import { IconExternal } from './IconExternal';
+@@ -28,6 +30,10 @@ export function Icon(props: IconProps): React.ReactElement | null {
+             return <IconMedium color={props.color} />;
+         case 'twitter':
+             return <IconTwitter color={props.color} />;
++        case 'facebook':
++            return <IconFacebook color={props.color} />
++        case 'instagram':
++            return <IconInstagram color={props.color} />
+         default:
+             return null;
+     }
 diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/configuration.ts b/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/configuration.ts
 index 163da08..5a49962 100644
 --- a/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/configuration.ts
@@ -40,7 +115,7 @@ index 163da08..5a49962 100644
 +    facebook:'Facebook'
  };
 diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/index.tsx b/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/index.tsx
-index b44beee..c2bf07d 100644
+index b44beee..1df9402 100644
 --- a/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/index.tsx
 +++ b/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/index.tsx
 @@ -12,6 +12,8 @@ export enum SocialProfile {
@@ -57,10 +132,59 @@ index b44beee..c2bf07d 100644
  
      return (
 -        <Slider>
-+        <Slider additionalClasses={['test-social-section']}>
++        <Slider additionalClasses={[classes.ProfileSlider,'test-social-section']}>
              {shownProfiles.map((profile, key) => {
                  const completeProfileData = profile.label && profile.url;
                  return !completeProfileData ? null : (
+diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/style.module.css b/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/style.module.css
+index 4c2b3a3..88d2836 100644
+--- a/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/style.module.css
++++ b/node_modules/gatsby-theme-portfolio-minimal/src/components/SocialProfiles/style.module.css
+@@ -35,3 +35,17 @@
+         margin-right: 1rem;
+     }
+ }
++
++.ProfileSlider {
++  display: grid;
++  grid-auto-flow: row;
++  column-gap: 1rem;
++  row-gap: 1rem;
++  grid-template-columns: repeat(3, 10.625rem);
++}
++
++@media (max-width: 607px) {
++  .ProfileSlider {
++    grid-template-columns: repeat(2, 12.625rem);
++  }
++}
+\ No newline at end of file
+diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/gatsby/node/createSchemaCustomization.js b/node_modules/gatsby-theme-portfolio-minimal/src/gatsby/node/createSchemaCustomization.js
+index 8c1f8a6..583e0c3 100644
+--- a/node_modules/gatsby-theme-portfolio-minimal/src/gatsby/node/createSchemaCustomization.js
++++ b/node_modules/gatsby-theme-portfolio-minimal/src/gatsby/node/createSchemaCustomization.js
+@@ -57,6 +57,8 @@ module.exports = ({ actions }) => {
+         linkedin: String
+         mail: String
+         twitter: String
++        instagram: String
++        facebook: String
+     }
+     type Logo {
+         text: String
+diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/hooks/useSiteMetadata.tsx b/node_modules/gatsby-theme-portfolio-minimal/src/hooks/useSiteMetadata.tsx
+index f81d307..1a9985f 100644
+--- a/node_modules/gatsby-theme-portfolio-minimal/src/hooks/useSiteMetadata.tsx
++++ b/node_modules/gatsby-theme-portfolio-minimal/src/hooks/useSiteMetadata.tsx
+@@ -53,6 +53,8 @@ export const query = graphql`
+                         mail
+                         medium
+                         twitter
++                        facebook
++                        instagram
+                     }
+                     titleTemplate
+                 }
 diff --git a/node_modules/gatsby-theme-portfolio-minimal/src/sections/Contact/index.tsx b/node_modules/gatsby-theme-portfolio-minimal/src/sections/Contact/index.tsx
 index 18decab..a950a6f 100644
 --- a/node_modules/gatsby-theme-portfolio-minimal/src/sections/Contact/index.tsx
