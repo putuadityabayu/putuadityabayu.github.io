@@ -18,13 +18,19 @@ By default, this repository has a `content` directory at the root of your Gatsby
 
 1. Clone This Repository
 
-2. Install Depedencies
+2. Install Gatsby CLI
+
+   ```sh
+   npm install -g gatsby-cli
+   ```
+
+3. Install Depedencies
 
    ```sh
    npm install
    ```
 
-3. Once installed, you can begin developing your site.
+4. Once installed, you can begin developing your site.
 
    ```sh
    npm run dev
