@@ -13,6 +13,6 @@
   "description": "Backend / Frontend Developer",
   "socialProfiles": {
     "from": ["LinkedIn", "Github", "Mail"],
-    "showIcons": false
+    "showIcons": true
   }
 }
