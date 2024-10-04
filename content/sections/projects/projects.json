@@ -1,85 +1,125 @@
 {
-  "projects": [
-    {
-      "visible": true,
-      "category": "FULLSTACK DEVELOPER",
-      "title": "Geowisata Lombok",
-      "description": "Geowisata Lombok is a digital explore Lombok website which was originally done for the NTB Tourism Office but stopped for several reasons. I'm working on this project together with friends, where I work on the backend and the frontend, and my friend is working on the geodesy side. The backend on this website uses native PHP and the frontend uses ReactJs.",
-      "tags": ["PHP", "NodeJs", "ReactJs", "NextJs"],
-      "image": {
-        "src": "../../images/geowisata.png",
-        "alt": "Quick Setup"
-      },
-      "links": [
+    "projects": [
         {
-          "type": "external",
-          "url": "https://geowisata.portalnesia.com"
-        }
-      ]
-    },
-    {
-      "visible": true,
-      "category": "FULLSTACK DEVELOPER",
-      "title": "Portalnesia",
-      "description": "Portalnesia is a personal website which I use it to learn new things about coding. This website has actually been around since 2016 using the native PHP programming language. But on 2019, I decided to recreate using the NodeJs and ReactJs programming languages. Overall, this portalnesia project uses the php programming language, python, node js, and golang",
-      "tags": ["PHP", "Python", "Golang", "NodeJs", "ReactJs", "NextJs"],
-      "image": {
-        "src": "../../images/portalnesia.png",
-        "alt": "Portalnesia"
-      },
-      "links": [
-        {
-          "type": "github",
-          "url": "https://github.com/portalnesia/portalnesia-web"
+            "visible": true,
+            "category": "FULLSTACK DEVELOPER",
+            "title": "Geowisata Lombok",
+            "description": "Geowisata Lombok is a digital explore Lombok website which was originally done for the NTB Tourism Office but stopped for several reasons. I'm working on this project together with friends, where I work on the backend and the frontend, and my friend is working on the geodesy side. The backend on this website uses native PHP and the frontend uses ReactJs.",
+            "tags": [
+                "PHP",
+                "NodeJs",
+                "ReactJs",
+                "NextJs"
+            ],
+            "image": {
+                "src": "../../images/geowisata.png",
+                "alt": "Quick Setup"
+            },
+            "links": [
+                {
+                    "type": "external",
+                    "url": "https://geowisata.portalnesia.com"
+                }
+            ]
         },
         {
-          "type": "external",
-          "url": "https://portalnesia.com"
-        }
-      ]
-    },
-    {
-      "visible": true,
-      "category": "FULLSTACK DEVELOPER",
-      "title": "Portalnesia Native",
-      "description": "Portalnesia Native is an android application development from portalnesia website. This project started from my curiosity against the React Native multi-platform framework. The plan I will also recreate this project but using flutter framework.",
-      "tags": ["Android", "React Native"],
-      "image": {
-        "src": "../../images/portalnesia-native.png",
-        "alt": "Portalnesia Native"
-      },
-      "links": [
-        {
-          "type": "github",
-          "url": "https://github.com/portalnesia/portalnesia-native"
-        }
-      ]
-    },
-    {
-      "visible": true,
-      "category": "FULLSTACK DEVELOPER",
-      "title": "SansOrder",
-      "description": "SansOrder is a personal project that I made out of curiosity about the POS (Point of Sales) system. This website was created using a free CMS service, StrapiJs to facilitate the backend service. And using reactjs for the frontend service. ",
-      "tags": ["NodeJs", "ReactJs", "NextJs"],
-      "image": {
-        "src": "../../images/sansorder.png",
-        "alt": "SansOrder"
-      },
-      "links": [
-        {
-          "type": "github",
-          "url": "https://github.com/portalnesia/sans-order"
+            "visible": true,
+            "category": "FULLSTACK DEVELOPER",
+            "title": "Portalnesia",
+            "description": "Portalnesia is a personal website which I use it to learn new things about coding. This website has actually been around since 2016 using the native PHP programming language. But on 2019, I decided to recreate using the NodeJs and ReactJs programming languages. Overall, this portalnesia project uses the php programming language, python, node js, and golang",
+            "tags": [
+                "PHP",
+                "Python",
+                "Golang",
+                "NodeJs",
+                "ReactJs",
+                "NextJs"
+            ],
+            "image": {
+                "src": "../../images/portalnesia.png",
+                "alt": "Portalnesia"
+            },
+            "links": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/portalnesia/portalnesia-web"
+                },
+                {
+                    "type": "external",
+                    "url": "https://portalnesia.com"
+                }
+            ]
         },
         {
-          "type": "external",
-          "url": "https://sansorder.portalnesia.com"
+            "visible": true,
+            "category": "FULLSTACK DEVELOPER",
+            "title": "Portalnesia Native",
+            "description": "Portalnesia Native is an android application development from portalnesia website. This project started from my curiosity against the React Native multi-platform framework. The plan I will also recreate this project but using flutter framework.",
+            "tags": [
+                "Android",
+                "React Native"
+            ],
+            "image": {
+                "src": "../../images/portalnesia-native.png",
+                "alt": "Portalnesia Native"
+            },
+            "links": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/portalnesia/portalnesia-native"
+                }
+            ]
+        },
+        {
+            "visible": true,
+            "category": "FULLSTACK DEVELOPER",
+            "title": "SansOrder",
+            "description": "SansOrder is a personal project that I made out of curiosity about the POS (Point of Sales) system. This website was created using a free CMS service, StrapiJs to facilitate the backend service. And using reactjs for the frontend service. ",
+            "tags": [
+                "NodeJs",
+                "ReactJs",
+                "NextJs"
+            ],
+            "image": {
+                "src": "../../images/sansorder.png",
+                "alt": "SansOrder"
+            },
+            "links": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/portalnesia/sans-order"
+                },
+                {
+                    "type": "external",
+                    "url": "https://sansorder.portalnesia.com"
+                }
+            ]
+        },
+        {
+            "visible": true,
+            "category": "FRONTEND DEVELOPER",
+            "title": "Bali Simcard",
+            "description": "designed and developed a responsive website for Bali SIM Card, a service providing prepaid SIM cards for tourists visiting Bali. The website aims to facilitate tourists in purchasing and activating SIM cards before or upon arrival in Bali.",
+            "tags": [
+                "NodeJs",
+                "ReactJs",
+                "NextJs"
+            ],
+            "image": {
+                "src": "../../images/balisimcard.png",
+                "alt": "BaliSimcard"
+            },
+            "links": [
+                {
+                    "type": "external",
+                    "url": "https://balisimcard.id"
+                }
+            ]
         }
-      ]
+    ],
+    "button": {
+        "visible": true,
+        "label": "Visit on Github",
+        "url": "https://github.com/portalnesia"
     }
-  ],
-  "button": {
-    "visible": true,
-    "label": "Visit on Github",
-    "url": "https://github.com/portalnesia"
-  }
 }
