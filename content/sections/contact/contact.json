@@ -1,13 +1,20 @@
 {
-  "name": "Putu Aditya Bayu Trana Suta",
-  "email": "adityatranasuta@gmail.com",
-  "description": "",
-  "image": {
-    "src": "../../images/PutuAditya-rect.jpg",
-    "alt": "Putu Aditya"
-  },
-  "socialProfiles": {
-    "from": ["LinkedIn", "Github", "Mail", "Twitter", "Facebook", "Instagram"],
-    "showIcons": true
-  }
+    "name": "Putu Aditya Bayu Trana Suta",
+    "email": "adityatranasuta@gmail.com",
+    "description": "",
+    "image": {
+        "src": "../../images/PutuAditya-rect.jpg",
+        "alt": "Putu Aditya"
+    },
+    "socialProfiles": {
+        "from": [
+            "LinkedIn",
+            "Github",
+            "Mail",
+            "Twitter",
+            "Facebook",
+            "Instagram"
+        ],
+        "showIcons": true
+    }
 }

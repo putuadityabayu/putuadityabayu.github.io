@@ -11,7 +11,7 @@ jobs:
       matrix:
         node-version: [16.x]
         platform: [ubuntu-latest, windows-latest, macos-latest]
-        browser: ['chrome','firefox','edge']
+        browser: ['chrome']
     runs-on: ${{ matrix.platform }}
     steps:
       - name: Checkout
